@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Rubik';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 100;
+}
+body{
+    background: url('/images/pattern-background-desktop-light.svg') no-repeat center center / cover;
+    height: 100vh;
+    
+}
+
