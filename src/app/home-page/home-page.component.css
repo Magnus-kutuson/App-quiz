@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-left: 5rem; */
+    /* margin-block: ; */
 }
 
 .switch {
@@ -16,6 +16,15 @@
     opacity: 0;
     width: 0;
     height: 0;
+}
+.center-page{
+    width: 80%;
+    border: 1px solid red;
+    height: 456px;
+    margin: 8rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
 }
 
 .slider {
@@ -51,3 +60,91 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(30px); 
 }
+
+
+.main {
+    width: 564px;
+    height: 456px;
+    /* border: 1px solid red; */
+}
+
+.Img-text {
+    width: 564px;
+    height: 96px;
+    background-color: #fff;
+    border-radius: 24px;
+    display: flex; 
+    align-items: center; 
+    padding: 0 16px; 
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Img-text img {
+    margin-right: 16px; 
+}
+
+.Img-text p {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500; 
+}
+
+.textStyle h1{
+    font-size: 64px;
+    margin-bottom: 2rem;
+}
+
+.textStyle span{
+    font-weight: 500;
+}
+.textStyle p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+}
+/* @media (width <= 1000px) {
+    
+    .Img-text {
+        width: 640px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 24px;
+        display: flex; 
+        align-items: center; 
+        padding: 0 16px; 
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .Img-text img {
+        margin-right: 16px; 
+    }
+    
+    .Img-text p {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 500; 
+    }
+}
+@media (width <= 500px) {
+
+    .Img-text {
+        width: 327px;
+        height: 64px;
+        background-color: #fff;
+        border-radius: 24px;
+        display: flex; 
+        align-items: center; 
+        padding: 0 16px; 
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .Img-text img {
+        margin-right: 16px; 
+    }
+    
+    .Img-text p {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 500; 
+    }
+} */
