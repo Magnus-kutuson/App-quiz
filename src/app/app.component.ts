@@ -1,21 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
-import { HttpClient } from '@angular/common/http';
 import { DataService } from './data.service';
+import { Data } from './data';
+
+
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, HomePageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'App-quiz';
+  allQuizzes: Data[]=[]
+dataService: DataService = inject(DataService)
 
+ngOnInit(): void {
+  this.allQuizzes = this.dataService.getData()
+  console.log(this.allQuizzes)
+}
 
-  constructor(private dataService: DataService){
-    this.dataService.getData().subscribe((res: any) =>{
-      alert(JSON.stringify(res))
-    })
-  }
 }
