@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './home-page.component.css'
 })
 export class HomePageComponent {
+  quiz :string[] = [];
 
+// getQuiz(){
+//   course = new Object();
+// }
 }
