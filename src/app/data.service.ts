@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
 import * as JsonData  from './data.json'
-import { Data } from './data'
+import { Data, Questions } from './data'
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-  data: Data[]= JsonData.quizzes
+  data: Data[]= JsonData.quizzes;
+  // questions:Questions[]=JsonData.quizzes
 
-  getData(){
+  getData(): Data[]{
     return this.data 
   }
+
 }

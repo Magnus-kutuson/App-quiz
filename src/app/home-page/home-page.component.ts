@@ -16,8 +16,7 @@ export class HomePageComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-  
     this.allQuizzes = this.dataService.getData();
-    console.log(this.allQuizzes);  
+    // console.log(this.allQuizzes);  
   }
 }

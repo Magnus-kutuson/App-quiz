@@ -1,0 +1,32 @@
+<div>
+    <div class="header">
+       <img src="/assets/images/icon-accessibility.svg" alt=""><p></p>
+        <div class="theme-switcher">
+            <img src="/assets/images/sun-icon.svg" alt="sun-icon">
+            <label for="theme-toggle" class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+            <img src="/assets/images/moon-icon.svg" alt="moon-icon">
+        </div>
+    </div>
+    <div class="center-page">
+        <div class="textStyle">
+            <p>Question 6 of 10</p>
+            <div class="question-range">
+                <h1>Which of these color<br> contrast ratios defines the<br> minimum WCAG 2.1 Level<br> AA requirement for normal<br> text?</h1>
+                <input type="range" min="0" max="10" value="10" readonly>
+            </div>
+        </div>
+        <div class="main" >
+            <div class="topics">
+
+                <div class="Img-text" *ngFor="let quiz of allQuizzes; let i = index">
+                   <button class="option">{{stringOption[i]}}</button>
+                    <!-- <p *ngFor="let option of options">{{quiz.option}}</p> -->
+                </div>
+                <button class="btnColor">Submit Answer</button>
+            </div>
+        </div>
+    </div> 
+</div>

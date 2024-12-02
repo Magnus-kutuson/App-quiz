@@ -4,9 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: 100;
+    /* overflow: hidden; */
 }
 body{
-    background: url('/images/pattern-background-desktop-light.svg') no-repeat center center / cover;
+    background: url('/assets/images/pattern-background-desktop-light.svg') no-repeat center center / cover;
     height: 100vh;   
 }
 
